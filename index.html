@@ -1,0 +1,44 @@
+<html>
+<head>
+
+<title>Garry's Mod Toolgun</title>
+
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	
+<div id="container">
+
+			<centered>
+				<br />
+				<img src="screen.png" alt="Snow" style="width:50%;">
+			</right>
+			<bottom>
+			<div class="top-right"><div style="font-size:150px;height:240px;width:700px;overflow:auto;background-color:transparent;color:white;scrollbar-base-color:gold;font-family:sans-serif;padding:10px;"><marquee behavior="scroll" direction="left" scrollamount="45"><label id="lblEmp">No Tools Selected</label></marquee>
+			<div class="bottom-right">
+</head>
+
+<body>
+		<input type="text" id="emp" value="" />
+        <input type="button" id="bt" value="Change Tool Name" onclick="changeLabel()" />
+		<button onclick="playSound()">Fire</button>
+<audio id="audio" src="fire.mp3"></audio>
+    </p>
+</body>
+<script>
+var audio = document.getElementById("audio");
+
+function playSound() {
+  audio.currentTime = 0;
+  audio.play();
+}
+
+    function changeLabel() {
+        let lbl = document.getElementById('lblEmp');
+        let empName = document.getElementById('emp').value;
+
+        lbl.innerText = empName;       // TREATS EVERY CONTENT AS TEXT.
+    }
+</script></div>
+</div></div>
+		
+		</div>
+</html>
